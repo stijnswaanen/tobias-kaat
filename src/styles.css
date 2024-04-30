@@ -106,7 +106,8 @@ body {
     left: 0;
     right: 0;
     text-align: center;
-    color: #FCB644;
+    /* color: #FCB644; */
+    color: black;
 }
 
 .js-pacman-playground .splash p.nerd {
