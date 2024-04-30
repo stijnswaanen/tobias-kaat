@@ -22,9 +22,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Install Dependencies
+      run: npm install
+
     - name: Build
       run: |
-        npm install
         npm run clean
         NODE_ENV=production
         npx webpack
