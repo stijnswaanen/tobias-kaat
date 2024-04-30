@@ -15,7 +15,8 @@ jobs:
         node-version: [18.x]
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout 🔔
+      uses: actions/checkout@v4
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -24,11 +25,16 @@ jobs:
         cache: 'npm'
         cache-dependency-path: package-lock.json
 
-    - name: Install Dependencies
-      run: npm install
+    - name: Install Dependencies 📦
+      run: npm ci
 
-    - name: Build
+    - name: Build 🏗️
       run: |
         npm run clean
         NODE_ENV=production
         npx webpack
+    
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+          folder: dist
