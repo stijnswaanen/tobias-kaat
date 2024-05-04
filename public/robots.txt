@@ -1,4 +1,8 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://pacman.js.org/sitemap.xml
+user-agent: *
+Disallow: /
+user-agent: GPTBot
+Disallow: /
+user-agent: CCBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
