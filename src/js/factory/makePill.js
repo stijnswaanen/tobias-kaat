@@ -2,7 +2,7 @@ import Animation, { ANIMATION_VERTICAL } from '../engine/Animation';
 import Item from '../Item';
 
 const animationBase = {
-    imageURL : 'img/pills.png',
+    imageURL : 'img/pills1.png',
     numberOfFrame : 2,
     delta : 24,
     refreshRate : 450,

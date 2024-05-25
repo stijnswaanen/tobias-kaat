@@ -2,7 +2,7 @@ import Animation from '../engine/Animation';
 import Item from '../Item';
 
 export const animationBase = {
-    imageURL : 'img/pills.png',
+    imageURL : 'img/pills1.png',
     numberOfFrame : 1
 };
 

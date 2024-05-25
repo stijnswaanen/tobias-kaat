@@ -79,7 +79,7 @@ describe('Item', function() {
 
             animations : {
                 default : new Animation({
-                    imageURL : '../img/pills.png',
+                    imageURL : '../img/pills1.png',
                     numberOfFrame : 1,
                     offsetX : 12
                 })

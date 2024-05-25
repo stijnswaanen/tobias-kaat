@@ -1,7 +1,7 @@
 // Images
 import './img/characters1.png';
 import './img/misc.png';
-import './img/pills.png';
+import './img/pills1.png';
 // Audio
 import './audio/back.mp3';
 import './audio/bonus.mp3';
