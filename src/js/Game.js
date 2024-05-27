@@ -699,7 +699,8 @@ class JsPacman extends Game {
             </div>
             <div class="start-p1" style="display: none">PLAYER ONE</div>
             <div class="start-ready" style="display: none">READY!</div>
-            <div class="game-over" style="display: none">GAME OVER</div>
+            <div class="game-over" style="display: none">YOU WIN<br />
+            Tot 7 september!</div>
             <div class="sound-status on" style="display: none"><span class="wrap">SOUND: <span class="on">ON</span><span class="off">OFF</span></span></div>
             <div class="paused" style="display: none"><span class="wrap">PAUSED</span></div>
             <div class="splash">

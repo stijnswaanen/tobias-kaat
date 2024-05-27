@@ -231,6 +231,12 @@ body {
     color: #F00;
 }
 
+.js-pacman-playground .game-over {
+    background-color: #000;
+    padding: .5rem;
+    line-height: 1.5;
+}
+
 .js-pacman-playground .sound-status.on span.on,
 .js-pacman-playground .sound-status span.off {
     display : inline;
