@@ -1,31 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
-        
-        <meta name="description" content="JavaScript Ms. Pac-Man Remake. Play Online Ms. Pac-Man.">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="apple-mobile-web-app-title" content="Kaat en Tobias">
-        <meta name="application-name" content="Kaat en Tobias">
-        <meta name="msapplication-TileColor" content="#222222">
-        <meta name="theme-color" content="#222222">
+    <meta
+      name="description"
+      content="JavaScript Ms. Pac-Man Remake. Play Online Ms. Pac-Man."
+    />
 
-        <title>Kaat en Tobias - gaan trouwen</title>
+    <meta name="apple-mobile-web-app-title" content="Kaat en Tobias" />
+    <meta name="application-name" content="Kaat en Tobias" />
+    <meta name="msapplication-TileColor" content="#222222" />
+    <meta name="theme-color" content="#222222" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#222222">
+    <title>Kaat en Tobias - zijn getrouwd</title>
 
-        <%= htmlWebpackPlugin.options.headTags %>
-    </head>
-    <body>
-        <h1 style="position: absolute; left: -1000px;">Kaat en Tobias</h1>
-        <h2 style="position: absolute; left: -1000px;">Gaan trouwen</h2>
-        <h3 style="position: absolute; left: -1000px;">07/09/2024</h3>
-        <div class="js-pacman-playground with-border">
-        </div>
-    </body>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#222222" />
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?p"></script>
+    <script>
+      function navigateToPacman() {
+        window.location.href = "/pacman.html";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container mx-auto text-center">
+      <h1 class="font-serif text-4xl my-5">Kaat & Tobias</h1>
+      <video
+        id="kaat-en-tobias-aftermovie"
+        class="video-js vjs-default-skin"
+        controls
+        preload="auto"
+        data-setup='{"fluid": true}'
+      >
+        <source
+          src="https://storage.googleapis.com/kaat-en-tobias-trouw-aftermovie/Trouwfilm%20Kaat%20Tobias%20V6%20gasten.mp4"
+          type="video/mp4"
+        />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to
+          a web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+      </video>
+      <button
+        type="button"
+        onclick="navigateToPacman()"
+        class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 my-5"
+      >
+        Ge kunt ook nog met ons spelen!
+      </button>
+    </div>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+  </body>
 </html>

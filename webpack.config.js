@@ -65,13 +65,18 @@ module.exports = {
 
     plugins : [
         new HtmlWebpackPlugin({
-            template : './src/index.html',
+            filename: 'pacman.html',
+            template : './src/pacman.html',
             headTags : process.env.JSPACMAN_HEAD_TAGS
         }),
         new CopyWebpackPlugin({
             patterns : [
                 {
                     from : path.resolve(__dirname, 'public'),
+                    to : path.resolve(__dirname, 'dist')
+                },
+                {
+                    from : path.resolve(__dirname, 'src', 'index.html'),
                     to : path.resolve(__dirname, 'dist')
                 }
             ]
