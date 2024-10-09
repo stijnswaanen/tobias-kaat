@@ -23,6 +23,9 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#222222" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+      function navigateToPictures() {
+        window.location.href = "https://photos.app.goo.gl/wG8ApcenYBcRsUs99";
+      }
       function navigateToPacman() {
         window.location.href = "/pacman.html";
       }
@@ -40,6 +43,13 @@
         allowfullscreen
         style="width: 100%; height: 100%;"
       ></iframe>
+      <button
+        type="button"
+        onclick="navigateToPictures()"
+        class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 my-5"
+      >
+        Trouwfoto's
+      </button>
       <button
         type="button"
         onclick="navigateToPacman()"
